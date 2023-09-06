@@ -1,0 +1,165 @@
+
+#pano {
+    background-color:white;
+}
+img {
+    width: 400px;
+    height: 420px;
+    border: 20%;
+    
+}
+#j {
+    color: orange;
+    font-size: large;
+}
+#h {
+    color: red;
+    font-size: large;
+}
+#c {
+    color: blue;
+    font-size: larger;
+    font-style: initial;
+}
+
+#Footer {
+    margin-top: 48pc;
+    width: 1260px;
+    height: 500px;
+    background-color:rgba(255, 0, 0, 0.26);
+    clear: both;
+}
+
+#direita {
+    margin-top: -24pc;
+    width: 700px;
+    height: 600px;
+    background-color: gainsboro;
+    float: right;
+}
+#minhafoto {
+    width: 700px;
+    height: 500px;
+    float: left;
+}
+
+#jsBtn {
+    background-color: coral;
+    font-size: large;
+    width: 80px;
+    height: 50px;
+    float: right;
+
+}
+#Cbtn {
+    font-size: large;
+    width: 80px;
+    height: 50px;
+    float: right;
+}
+#CsBtn {
+    background-color: aqua;
+    font-size: large;
+    width: 80px;
+    height: 50px;
+    float: right;
+}
+#htBtn {
+    background-color: brown;
+    font-size: large;
+    width: 80px;
+    height: 50px;
+    float: right;
+}
+@keyframes bounse{
+    0%,20%,60%, 100% {
+        -webkit-transform:translatey(0) ;
+        transform: translateY(-20px);
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+.btns {
+    text-align: center;
+    margin-top: 50px;
+}
+.efeito {
+    border: none;
+    color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+.efeito-1 {
+background-color: #28348A;
+
+
+}
+.efeito-1:before {
+
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 64px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+    transition: all 2s ease;
+}
+.efeito-1:hover:before {
+    width: 100%;
+}
+.efeito-2 {
+    background-color: #772150;
+}
+.efeito-2:before {
+
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+    transition: all 2s ease;
+}
+.efeito-2:hover:before {
+    height: 64px;
+}
+.efeito-4 {
+background: #f18f01;
+}
+.efeito-4:hover {
+    animation: bounse 1s;
+}
+.efeito-6 {
+    background: #376693;
+    transform-style: preserve-3d;
+}
+.efeito-6::after {
+    top: -100px;
+    left: 0px;
+    width: 100px;
+    padding: 20px;
+    position: absolute;
+    background: #3a9999;
+    border-radius: 10px;
+    box-sizing: border-box;
+    content: "Csharp";
+    transform-origin: left bottom;
+    transform: rotateX(90deg);
+}
+.efeito-6:hover {
+transform-origin: center bottom;
+transform: rotateX(-90deg)translateY(100%);
+}
